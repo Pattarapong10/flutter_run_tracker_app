@@ -1,5 +1,6 @@
 // ignore_for_file: sort_child_properties_last
 
+<<<<<<< HEAD
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
@@ -7,6 +8,10 @@ import 'package:flutter_run_tracker_app/models/run.dart';
 import 'package:flutter_run_tracker_app/services/supabase_service.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
+=======
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+>>>>>>> f85db3fe16199c3d6a6b3381ae916cd0107eb356
 
 class AddRunUI extends StatefulWidget {
   const AddRunUI({super.key});
@@ -16,6 +21,7 @@ class AddRunUI extends StatefulWidget {
 }
 
 class _AddRunUIState extends State<AddRunUI> {
+<<<<<<< HEAD
   // ------ โค้ดคำสั่งที่เกี่ยวกับการเปิดกล้อง หรือแกลลอรี่ -------
   Uint8List? imageBytes; // เอาไว้เก็บรูปที่จะแสดงที่ UI บนหน้าจอ
   XFile? imageFile;
@@ -53,6 +59,8 @@ class _AddRunUIState extends State<AddRunUI> {
   // ตัวแปรเก็บที่อยู๋รูปกรณีมีการอัปโหลดไฟล์
   String? imageUrlFromUpload = "";
 
+=======
+>>>>>>> f85db3fe16199c3d6a6b3381ae916cd0107eb356
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,6 +84,7 @@ class _AddRunUIState extends State<AddRunUI> {
         ),
       ),
       // ส่วนของ body
+<<<<<<< HEAD
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -311,6 +320,159 @@ class _AddRunUIState extends State<AddRunUI> {
                 ),
               ],
             ),
+=======
+      body: Padding(
+        padding: const EdgeInsets.only(
+          left: 35,
+          right: 35,
+        ),
+        child: Center(
+          child: Column(
+            children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.075,
+              ),
+              FaIcon(
+                FontAwesomeIcons.cameraRetro,
+                size: MediaQuery.of(context).size.width * 0.35,
+                color: Colors.grey[400],
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.050,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'วิ่งที่ไหน',
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width * 0.045,
+                  ),
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'เช่น สวนสาธารณะ, สนามกีฬา หรือ อื่นๆ',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[400]!,
+                      width: 2,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[400]!,
+                      width: 2,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.02,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'วิ่งกับใคร',
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width * 0.045,
+                  ),
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'เช่น เพื่อน 3 คน, แฟน หรือ อื่นๆ',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[400]!,
+                      width: 2,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[400]!,
+                      width: 2,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.02,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'ระยะทาง',
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width * 0.045,
+                  ),
+                ),
+              ),
+              TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  hintText: 'เช่น 1, 5, 11 หรือ อื่นๆ',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[400]!,
+                      width: 2,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[400]!,
+                      width: 2,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.04,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'บันทึกข้อมูล',
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width * 0.045,
+                    color: Colors.white,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  minimumSize: Size(
+                    double.infinity,
+                    MediaQuery.of(context).size.height * 0.065,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.02,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'ยกเลิก',
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.width * 0.045,
+                    color: Colors.white,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  minimumSize: Size(
+                    double.infinity,
+                    MediaQuery.of(context).size.height * 0.065,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                ),
+              ),
+            ],
+>>>>>>> f85db3fe16199c3d6a6b3381ae916cd0107eb356
           ),
         ),
       ),

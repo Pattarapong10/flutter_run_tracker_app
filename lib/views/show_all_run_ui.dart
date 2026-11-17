@@ -44,6 +44,7 @@ class _ShowAllRunUIState extends State<ShowAllRunUI> {
         backgroundColor: Color.fromARGB(255, 3, 5, 73),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+<<<<<<< HEAD
 
       // ส่วนของ body
       body: Padding(
@@ -67,6 +68,8 @@ class _ShowAllRunUIState extends State<ShowAllRunUI> {
           ),
         ),
       ),
+=======
+>>>>>>> f85db3fe16199c3d6a6b3381ae916cd0107eb356
     );
   }
 }

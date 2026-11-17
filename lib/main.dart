@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_run_tracker_app/views/splash_screen_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
+<<<<<<< HEAD
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // -------------------------------------
@@ -14,6 +15,10 @@ Future<void> main() async {
     publishableKey: 'sb_publishable_UVmGYiQIpLklXI3CCmesHQ_NU4RvpLH',
   );
   // -------------------------------------
+=======
+
+void main() {
+>>>>>>> f85db3fe16199c3d6a6b3381ae916cd0107eb356
   runApp(
     const FlutterRunTracker(),
   );
